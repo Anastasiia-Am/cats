@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+:root{
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+body{
+    background-color: #D4EAFF;
+    color: #142251;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    overflow-x: hidden;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1920px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+}
+.main h1 {
+    font-weight: 500;
+    font-size: 8vw;
+    line-height: 120%;
+}
+.box{
+    width: 100%;
+    background-color: #fff;
+    padding: 4.5% 2.5%;
+    border-radius: 2.94rem;
+    box-sizing: border-box;
+    margin-bottom: 4%;
+}
+.box h2{
+    margin-block-start: 0;
+    font-size: 5vw;
+    margin-top: 1%;
+}
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5%;
+    align-items: center;
+    margin-top: 5.2%;
+}
+.col{
+    padding: 10px 10px 25px 10px;
+    background-color: #D4EAFF;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 42vh;
+}
+.col_img{
+    overflow: hidden;
+    width: 100%;
+    height: 20vh;
+    border-radius: 30px;
+}
+
+.col_img img {
+    width: 100%;
+    height: auto;
+    
+}
+.col h3{
+    font-weight: 500;
+font-size: 2rem;
+white-space: nowrap;
+line-height: 90%;
+margin: 8% 0 7% 6%;
+}
+.col ul{
+    list-style-type: none;
+    padding:0 5.5%;
+    margin: 0;
+}
+.col li::before{
+    content: '-';
+    margin-right: 0.471rem;
+}
+.col li{
+    margin-bottom: 0.588rem;
+}
+@media screen and (max-width: 1600px){
+    .container{
+        min-width: 1600px;
+    }
+    .main{
+        gap: 0%;
+    }
+    /*.main h1 {
+        font-weight: 500;
+        font-size: 7.706rem;
+        line-height: 120%;
+    }*/
+}
+@media screen and (max-width: 1440px){
+    :root{
+        font-size: 14px;
+    }
+    .container{
+        max-width: 1440px;
+    }
+    .main img{
+        width: 55%;
+    }
+    /*.main h1 {
+        font-weight: 500;
+        font-size: 6.5rem;
+        line-height: 120%;
+    }*/
+    .box h2{
+        font-size: 4vw;
+    }
+    .col{
+        box-sizing: border-box;
+
+    }
+}
+@media screen and (max-width: 1024px) and (min-width:500px){
+    .container{
+        max-width: 1024px;
+        min-width: 431px;
+    }
+    .main{
+        align-items: flex-end;
+    }
+    .main img{
+        width: 56%;
+        padding-left: 4%;
+    }
+    .main h1{
+        margin-bottom: 7%;
+    }
+    .box {
+        padding: 4.5% 4% 9% 4%;
+    }
+    .box h2{
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4%;
+    }
+    .col_img{
+        height: 24vw;
+        min-height: 15vh;
+
+    }
+    .col_img img{
+        height: 23vw;
+    }
+    .col h3{
+        margin: 4% 0 4% 2%;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 499px){
+    .container{
+        max-width: 499px;
+        padding: 0 15%;
+    }
+    .main{
+       flex-direction: column;
+    }
+    .main img{
+        order: 2;
+        position: relative;
+        margin-top: -7%;
+        width: 80%;
+    }
+    .main h1{
+        order: 1;
+        font-size: 27vw;
+        text-align: center;
+        
+    }
+   .box{
+    width: 96%;
+    margin: 0 auto;
+    padding: 6%;
+}
+.box h2{
+    font-size: 20vw;
+    text-align: center;
+    padding: 3% 0;
+} 
+.grid{
+   display: flex;
+   flex-direction: column;
+    margin-top: 2%;
+}
+.col{
+    padding: 2% 2% 4.5% 2%;
+    border-radius: 83px;
+    width: 96%;
+    margin-bottom: 4%;
+}
+.col_img {
+    overflow: hidden;
+    width: 100%;
+    height: 60vh;
+    border-radius: 30px;
+}
+.col_img img {
+    width: 100%;
+    height: 100%;
+}
+.col h3{
+    font-size: 16vw;
+    margin: 4% 0 4% 6%;
+}
+.col ul{
+    font-size: 8vw;
+    line-height: 120%;
+}
+
+}

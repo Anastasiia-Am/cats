@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul></ul>
+    <script>
+        const ul = ['Гладкошерстный', 
+'Белый с рыжими глазами', 
+'Вакцинирован', 
+'Есть ветпаспорт',
+'Приучен к когтеточке',
+'Знает лоточек'
+];
+const html = ul.map((item) => `<li>${item}</li>`).join('');
+document.querySelector('ul').innerHTML = html;
+    </script>
+</body>
+</html>
