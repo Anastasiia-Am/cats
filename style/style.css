@@ -10,7 +10,7 @@ body{
     color: #142251;
     line-height: 100%;
     letter-spacing: -0.04em;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     margin: 0;
 }
 .container{
